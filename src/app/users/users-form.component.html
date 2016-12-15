@@ -1,0 +1,38 @@
+
+<div class="panel panel-default">
+  <div class="panel-body">
+	<h3>New User</h3>
+	<form (ngSubmit)="onSubmit()" #UserForm="ngForm">
+		<div class="form-group">
+			<label for="email">Email</label>
+			<input type="text" class="form-control" id="email" [(ngModel)]="model.email" name="email" required #email="ngModel">
+			<div [hidden]="email.valid || email.pristine" class="alert alert-danger">
+			Email it´s mandatory
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="passwd">Password</label>
+			<input type="Password" class="form-control" id="passwd" [(ngModel)]="model.passwd" name="passwd" required #passwd="ngModel">
+			<div [hidden]="passwd.valid || passwd.pristine" class="alert alert-danger">
+			Password it´s mandatory
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="name"></label>
+			<input type="text" class="form-control" id="name" [(ngModel)]="model.name" name="name" required #name="ngModel">
+			<div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+			You must submit a name
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="avatar">Avatar</label>
+			<input type="text" class="form-control" id="avatar" [(ngModel)]="model.avatar" name="avatar" required #avatar="ngModel">
+			<div [hidden]="avatar.valid || avatar.pristine" class="alert alert-danger">
+			You must submit a date
+			</div>
+		</div>
+		<button type="submit" class="btn btn-default" [disabled]="!UserForm.form.valid">Register</button>
+	</form>
+  </div>
+</div>
