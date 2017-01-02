@@ -1,34 +1,6 @@
-<!-- <ul>
-  <li class="text" *ngFor="let item of items | async">
-    {{item.name}} {{item.size}}
-  </li>
-</ul>
-
-  <input type="text" #newname placeholder="User" />
-  <input type="text" #newpass placeholder="Pass" />
-  <br />
-  <button (click)="save	(newname.value , newpass.value)">Set Name</button>
-  <button (click)="create (newname.value , newpass.value)">create</button>
- 
-  <div> {{ (af.auth | async)?.uid }} </div>
-  <button (click)="login()">Login</button>
-  <button (click)="logout()">Logout</button> -->
-
-
+   <br>
+   <br>
    <div class="container">
-    <!--  <h1>Trip With Me</h1>
-
-<!--    <div class="row">
-   <div class="col-lg-6">
-        <button class="btn btn-default" (click)="getOrder()">Ordenar por id</button>
-   </div>
-   <div class="col-lg-6">
-     <div class="input-group">
-        <span class="input-group-addon" id="basic-addon1">Filtrar por población:</span>
-        <input type="text" class="form-control" placeholder="000000" (input)="onChange($event)" aria-describedby="basic-addon1">
-       </div>
-     </div>
-    </div> -->
     <ul class="list-group">
       <li *ngFor="let trip of trips | async" class="list-group-item" [class.selected]="trip === selectedTrip"
         (click)="onSelect(trip)"> 
@@ -37,5 +9,4 @@
       </li>
     </ul>
     <trip-detail [trip]="selectedTrip"></trip-detail>
-
-    <trip-form (modelEmitter)="new_Trip($event)"></trip-form>
+    <trip-form *ngIf="(af.auth | async)" (modelEmitter)="new_Trip($event)"></trip-form>

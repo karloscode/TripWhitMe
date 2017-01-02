@@ -11,9 +11,10 @@ import { AngularFireModule, FIREBASE_PROVIDERS,AngularFire,
 
 import { AuthModule } from './auth/auth.module';
 import { DashModule } from './dashboard/dashboard.module';
-import { HomeComponent } from './home/home.component';
 import { TripService } from './trip/trip.service';
 import { firebaseConfig } from './firebaseProject';
+import { CollapseDirective } from 'ng2-bootstrap';
+
 
 
 export const firebaseAuthConfig = {
@@ -28,7 +29,7 @@ export const firebaseAuthConfig = {
     FormsModule, AppRouting, AuthModule, DashModule
   ],
   declarations: [ AppComponent ,TripsComponent, TripDetailComponent , 
-  TripsFormComponent , HomeComponent ,    PageNotFoundComponent
+  TripsFormComponent , PageNotFoundComponent , CollapseDirective
   ],
   providers: [ TripService
   ],

@@ -1,24 +1,36 @@
-<div class="row">
-    <div class="small-12 medium-10 medium-centered columns">
-        <div class="menu-centered">
-            <a routerLink="/" class="button hollow">AngularFire2 <small>beta</small></a>
-            <span *ngIf="af.auth | async">
-              <a routerLink="/dashboard" class="button">Dashboard</a>
-              <a (click)="logout()" class="button small" title="Logout"><i class="step fi-power size-18"></i></a>
-            </span>
-            <span *ngIf="!(af.auth | async)">
-              <a class="button small" routerLink="/login">Login</a> 
-              <a class="button small" routerLink="/signup">Sign up</a>
-            </span>
-        </div>
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" (click)="isCollapsed = !isCollapsed">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a id="title" class="navbar-brand" href="#">TripWithMe</a>
     </div>
-    <hr>
-</div>
-<router-outlet></router-outlet>
-<hr>
-<div class="menu-centered">
-    <ul class="menu">
+    <div id="navbar" class="navbar-collapse collapse" [collapse]="isCollapsed">
+      <ul class="nav navbar-nav navbar-right">
+
+              <li><a routerLink="/">Trips</a></li>
+              <li><a *ngIf="af.auth | async" routerLink="/dashboard">My Account</a></li>
+              <li><a *ngIf="af.auth | async" (click)="logout()">Logout</a></li>
+              <li><a *ngIf="!(af.auth | async)" routerLink="/login">Login</a></li>
+              <li><a *ngIf="!(af.auth | async)" routerLink="/signup">Sign up</a></li>
+      
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- <img class="img-responsive centerImg" src="./assets/TripWithMe.png"/> -->
+<h2 class="text-center">Find Friends for Travel Around the World</h2>
+
+ <router-outlet></router-outlet>
+<div class="footer">
+    <!-- <ul>
         <li *ngIf="af.auth | async">LOGGED IN</li>
         <li *ngIf="!(af.auth | async)">NOT LOGGED IN</li>
-    </ul>
+    </ul> -->
 </div>

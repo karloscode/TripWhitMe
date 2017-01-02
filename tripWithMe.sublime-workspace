@@ -147,6 +147,15 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "src/app/auth/login.component.html",
+			"settings":
+			{
+				"buffer_size": 2335,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -186,10 +195,24 @@
 	"expanded_folders":
 	[
 		"/C/Users/portatil/angular/tripWithMe",
-		"/C/Users/portatil/angular/tripWithMe/src"
+		"/C/Users/portatil/angular/tripWithMe/src",
+		"/C/Users/portatil/angular/tripWithMe/src/app",
+		"/C/Users/portatil/angular/tripWithMe/src/app/auth",
+		"/C/Users/portatil/angular/tripWithMe/src/app/users"
 	],
 	"file_history":
 	[
+		"/C/Users/portatil/angular/tripWithMe/src/app/app.component.html",
+		"/C/Users/portatil/angular/tripWithMe/src/app/dashboard/account.component.html",
+		"/C/Users/portatil/angular/tripWithMe/src/styles.css",
+		"/C/Users/portatil/angular/tripWithMe/src/app/dashboard/dashboard.component.html",
+		"/C/Users/portatil/angular/tripWithMe/src/app/auth/login.component.html",
+		"/C/Users/portatil/angular/tripWithMe/src/app/users/userslogin.component.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/home/home.component.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/dashboard/profile.component.html",
+		"/C/Users/portatil/Desktop/bs4/bootstrap-4.0.0-alpha.5/docs/examples/signin/signin.css",
+		"/C/Users/portatil/angular/tripWithMe/src/app/app.component.css",
+		"/C/Users/portatil/angular/tripWithMe/package.json",
 		"/C/Users/portatil/angular/tripWithMe/src/app/trip/trips.component.ts",
 		"/C/Users/portatil/angular/AngularFire2-Authentication/app/firebaseProject-Sample.ts",
 		"/C/Users/portatil/angular/tripWithMe/src/app/app.module.ts",
@@ -199,8 +222,6 @@
 		"/C/Users/portatil/angular/AngularFire2-Authentication/app/app.module.ts",
 		"/C/Users/portatil/angular/tripWithMe/src/app/app.component.ts",
 		"/C/Users/portatil/angular/tripWithMe/src/app/app.routing.ts",
-		"/C/Users/portatil/angular/tripWithMe/src/app/dashboard/dashboard.component.html",
-		"/C/Users/portatil/angular/tripWithMe/src/app/app.component.html",
 		"/C/Users/portatil/angular/tripWithMe/src/app/index.ts",
 		"/C/Users/portatil/angular/src_twm/app/app.component.ts",
 		"/C/Users/portatil/angular/tripWithMe/src/app/home/home.component.html",
@@ -218,7 +239,6 @@
 		"/C/Users/portatil/angular/tripWithMe/src/app/user.service.ts",
 		"/C/Users/portatil/angular/tripWithMe/src/app/dashboard/dashboard.module.ts",
 		"/C/Users/portatil/angular/tripWithMe/src/app/trips.component.html",
-		"/C/Users/portatil/angular/tripWithMe/src/app/home/home.component.ts",
 		"/C/Users/portatil/angular/tripWithMe/src/app/dashboard/dashboard.component.ts",
 		"/C/Users/portatil/angular/tripWithMe/src/app/trips.component.ts",
 		"/C/Users/portatil/angular/tripWithMe/src/app/trips-form.component.ts",
@@ -228,7 +248,6 @@
 		"/C/Users/portatil/angular/tripWithMe/src/app/auth/auth.module.ts",
 		"/C/Users/portatil/angular/tripWithMe/src/app/auth/auth-guard.service.ts",
 		"/C/Users/portatil/angular/tripWithMe/src/app/users.component.ts",
-		"/C/Users/portatil/angular/tripWithMe/package.json",
 		"/C/Users/portatil/angular/tripWithMe/src/app/trip.service.ts",
 		"/C/Users/portatil/angular/tripWithMe/src/app/userslogout.component.ts",
 		"/C/Users/portatil/angular/ani-angular-2-master/src/client/app/dashboard/blank-page/blankPage.module.ts",
@@ -253,7 +272,6 @@
 		"/C/Users/portatil/angular/tema8/app/app.module.ts",
 		"/C/Users/portatil/angular/tema8b/app/app.component.ts",
 		"/C/Users/portatil/angular/tripWithMe/src/trip.ts",
-		"/C/Users/portatil/angular/tripWithMe/src/app/app.component.css",
 		"/C/Users/portatil/angular/tripWithMe/src/main.ts",
 		"/C/Users/portatil/angular/tripWithMe/src/typings.d.ts",
 		"/C/Users/portatil/Desktop/items.json",
@@ -311,13 +329,7 @@
 		"/C/Users/portatil/angular/Tema9/app/pipes/pais-filter.pipe.ts",
 		"/C/Users/portatil/angular/Tema9/app/paises-form.component.js.map",
 		"/C/Users/portatil/angular/Tema9/app/pais-filter.pipe.ts",
-		"/C/Users/portatil/angular/Tema9/app/paises-form.component.ts",
-		"/C/Users/portatil/angular/firebase.json",
-		"/C/Users/portatil/angular/Tema9/package.json",
-		"/C/Users/portatil/angular/database.rules.json",
-		"/C/Users/portatil/angular/tema8b/app/paises-form.component.ts",
-		"/C/Users/portatil/angular/Tema9/app/pipes/pais-filter.ts",
-		"/C/Users/portatil/angular/tema8b/app/paises-form.component.js"
+		"/C/Users/portatil/angular/Tema9/app/paises-form.component.ts"
 	],
 	"find":
 	{
@@ -360,8 +372,39 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "src/app/auth/login.component.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2335,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2318,
+								2318
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 517.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
