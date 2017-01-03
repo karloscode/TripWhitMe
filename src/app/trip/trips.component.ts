@@ -9,19 +9,16 @@ import { FirebaseListObservable } from 'angularfire2';
 @Component({
   selector: 'trips',
   templateUrl: 'trips.component.html',
-  styleUrls: ['trip.component.css'],
 })
 export class TripsComponent implements OnInit {
   selectedTrip: Trip;
   trips: FirebaseListObservable<any[]>;
   path: string ='/trips';
   public userData: any;
-  public authF: any;
-  
 
+  
   constructor(@Inject(FirebaseApp) firebaseApp: any , private tripService: TripService ,
     private af: AngularFire ) {
-    this.authF = firebaseApp.auth();
    }
 
  	ngOnInit(): void {
@@ -31,9 +28,6 @@ export class TripsComponent implements OnInit {
         });
   }
 
-  onSelect(trip: Trip): void {
-    this.selectedTrip = trip;
-  }
 
   new_Trip(newTrip){
 
@@ -47,8 +41,9 @@ export class TripsComponent implements OnInit {
           console.log(error);
         })
     }*/
-    newTrip.userName = this.userData.auth.displayName;
     newTrip.uid = this.userData.auth.uid;
+    newTrip.userName = this.userData.auth.displayName;
+    newTrip.photoUrl = this.userData.auth.photoURL;
     this.tripService.newTrip(newTrip);
   }
 

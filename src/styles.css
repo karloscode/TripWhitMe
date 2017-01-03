@@ -4,8 +4,24 @@ body {
   background: center center cover no-repeat fixed;
 }
 
+h1 { 
+  opacity:0.8;
+  font-weight: bold;
+}
+
+
 h2 { 
   color: #D15440;
+  opacity:0.9;
+}
+
+.glyphicon {
+    font-size: 25px;
+}
+
+.tripCard {
+  margin: 10px;
+  border-radius: 20px;
 }
 
 .bgImg {

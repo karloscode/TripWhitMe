@@ -14,6 +14,8 @@ import { DashModule } from './dashboard/dashboard.module';
 import { TripService } from './trip/trip.service';
 import { firebaseConfig } from './firebaseProject';
 import { CollapseDirective } from 'ng2-bootstrap';
+import { DropdownModule } from 'ng2-bootstrap';
+
 
 
 
@@ -26,10 +28,10 @@ export const firebaseAuthConfig = {
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(firebaseConfig ,firebaseAuthConfig),
-    FormsModule, AppRouting, AuthModule, DashModule
+    FormsModule, AppRouting, AuthModule, DashModule , DropdownModule.forRoot()
   ],
   declarations: [ AppComponent ,TripsComponent, TripDetailComponent , 
-  TripsFormComponent , PageNotFoundComponent , CollapseDirective
+  TripsFormComponent , PageNotFoundComponent , CollapseDirective 
   ],
   providers: [ TripService
   ],

@@ -12,12 +12,12 @@
     </div>
     <div id="navbar" class="navbar-collapse collapse" [collapse]="isCollapsed">
       <ul class="nav navbar-nav navbar-right">
-
-              <li><a routerLink="/">Trips</a></li>
-              <li><a *ngIf="af.auth | async" routerLink="/dashboard">My Account</a></li>
-              <li><a *ngIf="af.auth | async" (click)="logout()">Logout</a></li>
-              <li><a *ngIf="!(af.auth | async)" routerLink="/login">Login</a></li>
-              <li><a *ngIf="!(af.auth | async)" routerLink="/signup">Sign up</a></li>
+        <li><a *ngIf="af.auth | async" routerLink="/">Trips</a></li>
+        <li><a *ngIf="af.auth | async" routerLink="/addtrip">Add Trip</a></li>
+        <li><a *ngIf="af.auth | async" routerLink="/dashboard">My Account</a></li>
+        <li><a *ngIf="af.auth | async" (click)="logout()">Logout</a></li>
+        <li><a *ngIf="!(af.auth | async)" routerLink="/login">Login</a></li>
+        <li><a *ngIf="!(af.auth | async)" routerLink="/signup">Sign up</a></li>
       
       </ul>
     </div>
@@ -25,7 +25,10 @@
 </nav>
 
 <!-- <img class="img-responsive centerImg" src="./assets/TripWithMe.png"/> -->
-<h2 class="text-center">Find Friends for Travel Around the World</h2>
+<span class="text-center">
+  <h1>TripWithMe</h1>
+  <h2> Find Friends for Travel Around the World</h2>
+</span>
 
  <router-outlet></router-outlet>
 <div class="footer">
