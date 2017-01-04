@@ -6,6 +6,7 @@ import { AppComponent , PageNotFoundComponent } from './app.component';
 import { TripsComponent } from './trip/trips.component';
 import { TripDetailComponent } from './trip/trip-detail.component';
 import { TripsFormComponent } from './trip/trips-form.component';
+import { AddTripComponent } from './trip/addtrip.component';
 import { AngularFireModule, FIREBASE_PROVIDERS,AngularFire,
          AuthMethods, AuthProviders } from 'angularfire2';
 
@@ -31,7 +32,7 @@ export const firebaseAuthConfig = {
     FormsModule, AppRouting, AuthModule, DashModule , DropdownModule.forRoot()
   ],
   declarations: [ AppComponent ,TripsComponent, TripDetailComponent , 
-  TripsFormComponent , PageNotFoundComponent , CollapseDirective 
+  TripsFormComponent , PageNotFoundComponent , CollapseDirective , AddTripComponent
   ],
   providers: [ TripService
   ],

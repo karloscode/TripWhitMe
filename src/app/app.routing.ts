@@ -7,10 +7,11 @@ import { TripsFormComponent } from './trip/trips-form.component';
 import { LoginComponent, SignupComponent } from './auth/auth.component';
 import { AuthGuard } from './auth/auth-guard.service';
 import { PageNotFoundComponent } from './app.component';
+import { AddTripComponent } from './trip/addtrip.component';
 
 const appRoutes: Routes = [
   { path: '', component: TripsComponent },
-  { path: 'addtrip', component: TripsFormComponent } ,
+  { path: 'addtrip', component: AddTripComponent } ,
   { path: '**', component: PageNotFoundComponent }
 ];
 

@@ -1,7 +1,7 @@
 <br>
 <br>
   <div class="container">
-    <div class="row" style="margin:10px">
+    <div class="row">
         <div class="thumbnail tripCard col-md-2" *ngFor="let trip of trips | async">                
           <img class="img-circle" src="{{trip.photoUrl}}" alt="{{trip.userName}}" style="width:100%">
           <div class="caption">
@@ -36,3 +36,5 @@
       </div>
     </div>
   </div>
+    
+

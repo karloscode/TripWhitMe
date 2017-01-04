@@ -1,54 +1,54 @@
-<div class="container-fluid">
-    <h3>Account Page</h3> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+<div class="container">
+    <h2>Account Page</h2> 
     <hr>
-    <h2>Change Name</h2>
+    <h3>Change Name</h3>
     <form #userData='ngForm' (ngSubmit)="changeUser(userData)">
         <div class="row">
-            <div class="">
+            <div class="form-group col-md-4">
                 <label> Change Name
                     <input type="text" name="displayName" (ngModel)="displayName" required>
                 </label>
             </div>            
-            <div class="">
+            <div class="orm-group col-md-4">
                 <label> PhotoURL
                     <input type="url" name="photoURL" (ngModel)="photoURL" required>
                 </label>
             </div>
             <div class="">
-                <button type="submit" class="button" [disabled]="!userData.valid">Submit</button>
+                <button type="submit" class="btn btn-lg btn-danger" [disabled]="!userData.valid">Submit</button>
             </div>
         </div>
     </form>    
     <hr>
-    <h2>Change Email</h2>
+    <h3>Change Email</h3>
     <form #emailData='ngForm' (ngSubmit)="changeEmail(emailData)">
         <div class="row">
-            <div class="small-12 columns">
+            <div class="form-group col-md-4">
                 <label> Change Email
                     <input type="email" name="email" (ngModel)="email" required>
                 </label>
             </div>            
-            <div class="small-12 columns">
-                <button type="submit" class="button" [disabled]="!emailData.valid">Submit</button>
+            <div class="form-group col-md-4">
+                <button type="submit" class="btn btn-lg btn-danger " [disabled]="!emailData.valid">Submit</button>
             </div>
         </div>
     </form>
     <hr>
-    <h2>Change Password</h2>
+    <h3>Change Password</h3>
     <form #passwordData='ngForm' (ngSubmit)="changePassword(passwordData)">
         <div class="row">
-            <div class="small-12 columns">
+            <div class="form-group col-md-4">
                 <label> Old Password
                     <input type="password" name="oldpassword" (ngModel)="oldpassword" required>
                 </label>
             </div>
-            <div class="small-12 columns">
+            <div class="form-group col-md-4">
                 <label> New Password
                     <input type="password" name="newpassword" (ngModel)="newpassword" required>
                 </label>
             </div>
-            <div class="small-12 columns">
-                <button type="submit" class="button" [disabled]="!passwordData.valid">Submit</button>
+            <div class="form-group col-md-4">
+                <button type="submit" class="btn btn-lg btn-danger" [disabled]="!passwordData.valid">Submit</button>
             </div>
         </div>
     </form>

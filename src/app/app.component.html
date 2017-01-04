@@ -12,7 +12,7 @@
     </div>
     <div id="navbar" class="navbar-collapse collapse" [collapse]="isCollapsed">
       <ul class="nav navbar-nav navbar-right">
-        <li><a *ngIf="af.auth | async" routerLink="/">Trips</a></li>
+        <li><a routerLink="/">Trips</a></li>
         <li><a *ngIf="af.auth | async" routerLink="/addtrip">Add Trip</a></li>
         <li><a *ngIf="af.auth | async" routerLink="/dashboard">My Account</a></li>
         <li><a *ngIf="af.auth | async" (click)="logout()">Logout</a></li>

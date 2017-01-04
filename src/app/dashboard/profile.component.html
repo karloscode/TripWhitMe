@@ -1,8 +1,8 @@
-<div class="container-fluid">
+<div class="container">
     <h3>Profile Page</h3> 
     Below is the JSON data of the currently logged in User, but in summary: 
     <div *ngIf="!userData" class="callout alert">
-      <p class="lead">
+      <p class="">
         No Data available
       </p>
     </div>
@@ -14,6 +14,6 @@
       Login Means: {{ userData.auth.providerData | json }}
     </p>
     <hr>
-    {{ userData | json }}
+    <!-- {{ userData | json }} -->
     </div>
 </div>
