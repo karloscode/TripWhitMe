@@ -35,5 +35,3 @@ testem.log
 .DS_Store
 Thumbs.db
 
-#Firebase Config
-firebaseProject.ts
