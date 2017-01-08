@@ -1,0 +1,12 @@
+
+    <div class="container">
+    <form #userData='ngForm' (ngSubmit)="changeUser(userData)" class="form-signin">
+        <h2 class="form-signin-heading">Please Sign Up</h2>
+        <h4>Step 2/2</h4>
+        <label class="sr-only"> UserName </label>
+        <input type="text" name="displayName" class="form-control" (ngModel)="displayName" placeholder="UserName" required>
+        <label class="sr-only"> PhotoURL </label>
+        <input type="url" name="photoURL" class="form-control" (ngModel)="photoURL" placeholder="PhotoURL http://assets/avataricon1.png" required>
+        <button style="margin-top:10px" type="submit" class="btn btn-lg btn-danger btn-block" [disabled]="!userData.valid">Submit</button>
+    </form>    
+    </div>  

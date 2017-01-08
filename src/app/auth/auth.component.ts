@@ -21,7 +21,7 @@ export class SignupComponent {
       }).then(
         (success) => {
         console.log(success);
-        this.router.navigate(['/login'])
+        this.router.navigate(['/signup2'])
       }).catch(
         (err) => {
         console.log(err);

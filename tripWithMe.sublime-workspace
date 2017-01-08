@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"T",
+				"TripWithMe"
+			],
+			[
 				"User",
 				"UserService\tclass"
 			],
@@ -147,15 +151,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "src/app/auth/login.component.html",
-			"settings":
-			{
-				"buffer_size": 2335,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -194,34 +189,49 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/portatil/angular/tripWithMe",
-		"/C/Users/portatil/angular/tripWithMe/src",
-		"/C/Users/portatil/angular/tripWithMe/src/app",
-		"/C/Users/portatil/angular/tripWithMe/src/app/auth",
-		"/C/Users/portatil/angular/tripWithMe/src/app/users"
+		"/C/Users/portatil/angular/tripWithMe"
 	],
 	"file_history":
 	[
-		"/C/Users/portatil/angular/tripWithMe/src/app/app.component.html",
-		"/C/Users/portatil/angular/tripWithMe/src/app/dashboard/account.component.html",
+		"/C/Users/portatil/angular/tripWithMe/.gitignore",
+		"/C/Users/portatil/angular/tripWithMe/src/app/trip/addtrip.component.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/trip/trips.component.html",
 		"/C/Users/portatil/angular/tripWithMe/src/styles.css",
+		"/C/Users/portatil/angular/tripWithMe/src/app/app.module.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/trip/trips-form.component.html",
+		"/C/Users/portatil/angular/tripWithMe/src/app/app.component.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/trip/trips-form.component.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/app.routing.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/trip/addtrip.component.html",
+		"/C/Users/portatil/angular/tripWithMe/src/app/app.component.html",
+		"/C/Users/portatil/angular/tripWithMe/src/app/dashboard/profile.component.html",
 		"/C/Users/portatil/angular/tripWithMe/src/app/dashboard/dashboard.component.html",
+		"/C/Users/portatil/angular/tripWithMe/src/app/dashboard/account.component.html",
+		"/C/Users/portatil/angular/tripWithMe/src/app/dashboard/settings.component.html",
+		"/C/Users/portatil/angular/tripWithMe/src/app/trip/trips.component.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/trip/trip.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/trip/trip.component.css",
+		"/C/Users/portatil/angular/angular2bands/src/app/components/select-band.component.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/firebaseProject.ts",
+		"/C/Users/portatil/angular/firebase.json",
+		"/C/Users/portatil/angular/tripWithMe/src/index.html",
+		"/C/Users/portatil/angular/tripWithMe/src/app/dashboard/dashboard.routing.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/auth/signup.component.html",
+		"/C/Users/portatil/angular/tripWithMe/src/app/auth/resetpassword.component.html",
 		"/C/Users/portatil/angular/tripWithMe/src/app/auth/login.component.html",
+		"/C/Users/portatil/angular/angular2bands/src/styles.css",
+		"/C/Users/portatil/angular/angular2bands/src/app/app.module.ts",
+		"/C/Users/portatil/angular/angular2bands/src/app/app.component.ts",
+		"/C/Users/portatil/angular/angular2bands/src/index.html",
+		"/C/Users/portatil/angular/angular2bands/src/app/views/app.component.html",
 		"/C/Users/portatil/angular/tripWithMe/src/app/users/userslogin.component.ts",
 		"/C/Users/portatil/angular/tripWithMe/src/app/home/home.component.ts",
-		"/C/Users/portatil/angular/tripWithMe/src/app/dashboard/profile.component.html",
 		"/C/Users/portatil/Desktop/bs4/bootstrap-4.0.0-alpha.5/docs/examples/signin/signin.css",
 		"/C/Users/portatil/angular/tripWithMe/src/app/app.component.css",
 		"/C/Users/portatil/angular/tripWithMe/package.json",
-		"/C/Users/portatil/angular/tripWithMe/src/app/trip/trips.component.ts",
 		"/C/Users/portatil/angular/AngularFire2-Authentication/app/firebaseProject-Sample.ts",
-		"/C/Users/portatil/angular/tripWithMe/src/app/app.module.ts",
-		"/C/Users/portatil/angular/tripWithMe/.gitignore",
-		"/C/Users/portatil/angular/tripWithMe/src/app/firebaseProject.ts",
 		"/C/Users/portatil/angular/tripWithMe/src/app/dashboard/child.component.ts",
 		"/C/Users/portatil/angular/AngularFire2-Authentication/app/app.module.ts",
-		"/C/Users/portatil/angular/tripWithMe/src/app/app.component.ts",
-		"/C/Users/portatil/angular/tripWithMe/src/app/app.routing.ts",
 		"/C/Users/portatil/angular/tripWithMe/src/app/index.ts",
 		"/C/Users/portatil/angular/src_twm/app/app.component.ts",
 		"/C/Users/portatil/angular/tripWithMe/src/app/home/home.component.html",
@@ -230,7 +240,6 @@
 		"/C/Users/portatil/angular/AngularFire2-Authentication/index.html",
 		"/C/Users/portatil/angular/AngularFire2-Authentication/app/app.component.ts",
 		"/C/Users/portatil/angular/AngularFire2-Authentication/app/app.component.html",
-		"/C/Users/portatil/angular/tripWithMe/src/index.html",
 		"/C/Users/portatil/angular/AngularFire2-Authentication/app/auth/auth.component.ts",
 		"/C/Users/portatil/angular/AngularFire2-Authentication/app/dashboard/child.component.ts",
 		"/C/Users/portatil/angular/AngularFire2-Authentication/app/dashboard/dashboard.component.ts",
@@ -311,25 +320,7 @@
 		"/C/Users/portatil/angular/tema10b/app/animales.service.ts",
 		"/C/Users/portatil/angular/tema10b/app/app.module.ts",
 		"/C/Users/portatil/angular/tema10b/app/animales.component.ts",
-		"/C/Users/portatil/angular/tema10b/app/animales.component.html",
-		"/C/Users/portatil/angular/GoToDo/src/app/app.module.ts",
-		"/C/Users/portatil/AppData/Local/Temp/Temp1_holaAngular.zip/holaAngular/app/app.component.ts",
-		"/C/Users/portatil/angular/tema10/app/in-memory-data.service.ts",
-		"/C/Users/portatil/angular/tema10/app/app.module.ts",
-		"/C/Users/portatil/angular/tema10/app/app.component.ts",
-		"/C/Users/portatil/angular/tema10/app/animales.component.ts",
-		"/C/Users/portatil/angular/tema10/app/animales.service.ts",
-		"/C/Users/portatil/angular/tema10/app/animales.component.html",
-		"/C/Users/portatil/angular/tema10/app/animal.ts",
-		"/C/Users/portatil/angular/tema10/app/app.routing.ts",
-		"/C/Users/portatil/angular/tema10/app/animales.component.css",
-		"/C/Users/portatil/angular/Tema9/app/app.component.ts",
-		"/C/Users/portatil/angular/Tema9/app/app.module.ts",
-		"/C/Users/portatil/angular/Tema9/app/pipes/acortar-texto.pipe.ts",
-		"/C/Users/portatil/angular/Tema9/app/pipes/pais-filter.pipe.ts",
-		"/C/Users/portatil/angular/Tema9/app/paises-form.component.js.map",
-		"/C/Users/portatil/angular/Tema9/app/pais-filter.pipe.ts",
-		"/C/Users/portatil/angular/Tema9/app/paises-form.component.ts"
+		"/C/Users/portatil/angular/tema10b/app/animales.component.html"
 	],
 	"find":
 	{
@@ -372,39 +363,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "src/app/auth/login.component.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2335,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2318,
-								2318
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 517.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],

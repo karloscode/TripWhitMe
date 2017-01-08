@@ -29,6 +29,29 @@
 				You must submit a date
 				</div>
 			</div>
+			<div class="form-group col-md-4">
+				<label for="isPlane">Travel by Plane?</label>
+				<input type="radio"  name="isPlane" [(ngModel)]="model.isPlane" #isPlane="ngModel" [value]=true>
+				<input type="radio" name="isPlane" [(ngModel)]="model.isPlane" #isPlane="ngModel" [value]=false>
+			</div>
+			<div class="form-group col-md-4">
+				<label for="isRoad">Travel by Road?</label>
+				<input type="radio"  name="isRoad" [(ngModel)]="model.isRoad" #isRoad="ngModel" [value]=true>
+				<input type="radio" name="isRoad" [(ngModel)]="model.isRoad" #isRoad="ngModel" [value]=false>
+			</div>
+			<div class="form-group col-md-4">
+				<label for="isLowCost">This Trip is Low Cost?</label>
+				<input type="radio"  name="isLowCost" [(ngModel)]="model.isLowCost" #isLowCost="ngModel" [value]=true>
+				<input type="radio" name="isLowCost" [(ngModel)]="model.isLowCost" #isLowCost="ngModel" [value]=false>
+			</div>
+			<div class="form-group col-md-4">
+				<label for="isAny">Trip to any place in any time?</label>
+				<input type="radio"  name="isAny" [(ngModel)]="model.isAny" #isLowCost="ngModel" [value]=true>
+				<input type="radio" name="isAny" [(ngModel)]="model.isAny" #isLowCost="ngModel" [value]=false>
+			</div>
+
+
+
 			<button type="submit" class="btn btn-default btn-danger centerImg" [disabled]="!TripForm.form.valid">Submit</button>
 		</form>
 

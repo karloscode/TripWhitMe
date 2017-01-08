@@ -1,14 +1,14 @@
 <br>
 <br>
   <div class="container">
-    <div class="row">
-        <div class="thumbnail tripCard col-md-2" *ngFor="let trip of trips | async">                
+    <ul>
+        <li class="thumbnail tripCard col-md-2 col-xs-6" *ngFor="let trip of trips | async">
+      
           <img class="img-circle" src="{{trip.photoUrl}}" alt="{{trip.userName}}" style="width:100%">
-          <div class="caption">
           <p>{{ trip.userName }} wants trip from {{trip.from}} to {{trip.to}} on {{trip.date}} </p>
           <div class="row">
             <div class="col-md-6">
-              <button class="btn btn-sm btn-primary centerImg">Go with You!</button>
+              <button class="btn btn-sm btn-primary centerImg">I Go!</button>
             </div>
             <div class="col-md-6">
               <button class="btn btn-sm btn-primary centerImg">Chat</button>
@@ -30,11 +30,8 @@
            <a class='my-tool-tip' data-toggle="tooltip" data-placement="left" title="Users Go With">
           <p class="badge" style="margin-bottom:15px">{{trip.trippers}}</p>
           </a>
-
-
-         </div>
-      </div>
+        </li>
+      </ul>
     </div>
-  </div>
     
 

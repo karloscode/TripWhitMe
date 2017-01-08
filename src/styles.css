@@ -20,9 +20,15 @@ h2 {
 }
 
 .tripCard {
+  padding: 15px;
   margin: 0px;
   border-radius: 20px;
+  display: inline-block;
+  *display:inline; /* ie7 fix */
+  float: none; /* this is the part that makes it work */
+
 }
+
 
 .bgImg {
   background-repeat: no-repeat;

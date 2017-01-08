@@ -25,6 +25,7 @@ export class AddTripComponent implements OnInit {
     newTrip.uid = this.userData.auth.uid;
     newTrip.userName = this.userData.auth.displayName;
     newTrip.photoUrl = this.userData.auth.photoURL;
+    newTrip.trippers = 1;
     this.tripService.newTrip(newTrip);
     this.router.navigate(['/']);
   }
