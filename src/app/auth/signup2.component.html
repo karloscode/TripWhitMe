@@ -6,7 +6,7 @@
         <label class="sr-only"> UserName </label>
         <input type="text" name="displayName" class="form-control" (ngModel)="displayName" placeholder="UserName" required>
         <label class="sr-only"> PhotoURL </label>
-        <input type="url" name="photoURL" class="form-control" (ngModel)="photoURL" placeholder="PhotoURL http://assets/avataricon1.png" required>
+        <input type="text" name="photoURL" class="form-control" (ngModel)="photoURL" placeholder="PhotoURL ./assets/avataricon1.png" required>
         <button style="margin-top:10px" type="submit" class="btn btn-lg btn-danger btn-block" [disabled]="!userData.valid">Submit</button>
     </form>    
     </div>  
