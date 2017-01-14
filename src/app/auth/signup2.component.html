@@ -5,8 +5,31 @@
         <h4>Step 2/2</h4>
         <label class="sr-only"> UserName </label>
         <input type="text" name="displayName" class="form-control" (ngModel)="displayName" placeholder="UserName" required>
-        <label class="sr-only"> PhotoURL </label>
-        <input type="text" name="photoURL" class="form-control" (ngModel)="photoURL" placeholder="PhotoURL ./assets/avataricon1.png" required>
+       <!--  <label class=""> PhotoURL </label>
+        <input type="text" name="photoURL" class="form-control"  (ngModel)="photoURL" required> -->
+        <h5 class=""> Select Avatar </h5>
+
+        <div class="row">
+            <div class="thumbnail col-md-2">
+                <img src= "./assets/avataricon1.png" (click)="toggle($event)"  [class.img-circle]="photoURL===selectedPhotoURL" id="./assets/avataricon1.png">
+            </div>
+            <div class="thumbnail col-md-2">
+                <img src= "./assets/avataricon2.png" (click)="toggle($event)" [class.img-circle]="photoURL===selectedPhotoURL" id="./assets/avataricon2.png">
+            </div>
+            <div class="thumbnail col-md-2">
+                <img src= "./assets/avataricon3.png" (click)="toggle($event)"  id="./assets/avataricon3.png">
+            </div>
+            <div class="thumbnail col-md-2">
+                <img src= "./assets/avataricon4.png" (click)="toggle($event)"  id="./assets/avataricon4.png">
+            </div>
+            <div class="thumbnail col-md-2">
+                <img src= "./assets/avataricon5.png" (click)="toggle($event)"  id="./assets/avataricon5.png">
+            </div>
+            <div class="thumbnail col-md-2">
+                <img src= "./assets/avataricon6.png" (click)="toggle($event)"  id="./assets/avataricon6.png">
+            </div>
+        </div>
+
         <button style="margin-top:10px" type="submit" class="btn btn-lg btn-danger btn-block" [disabled]="!userData.valid">Submit</button>
     </form>    
     </div>  

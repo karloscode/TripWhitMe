@@ -1,5 +1,8 @@
-import { Component, Inject } from '@angular/core';
+import { Component, Inject, ViewChild } from '@angular/core';
 import { AngularFire, FirebaseApp } from 'angularfire2';
+import { FormsModule }   from '@angular/forms';
+import { NgModule } from '@angular/core';
+
 
 
 
@@ -10,11 +13,27 @@ import { AngularFire, FirebaseApp } from 'angularfire2';
 
 export class Signup2Component { 
   public auth: any;
-  constructor(@Inject(FirebaseApp) firebaseApp: any) {
+  phothoURL: string = "./assets/avataricon1.png";
+  showStyle: boolean = false;
+  style: string = "";
+  selectedPhotoURL: string ="";
+
+/*  onsubmit(model: userData){ 
+
+  }
+*/  constructor(@Inject(FirebaseApp) firebaseApp: any) {
     this.auth = firebaseApp.auth();
     console.log(this.auth);
   }
 
+
+toggle(event)
+{
+   console.log(event.target.id);
+   this.phothoURL = event.target.id;
+   this.selectedPhotoURL= event.target.id;
+
+}
   changeUser(userData) {
     if(userData.valid) {
       console.log(userData.value);
