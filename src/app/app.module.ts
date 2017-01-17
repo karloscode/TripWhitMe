@@ -16,6 +16,8 @@ import { TripService } from './trip/trip.service';
 import { firebaseConfig } from './firebaseProject';
 import { CollapseDirective } from 'ng2-bootstrap';
 import { DropdownModule } from 'ng2-bootstrap';
+import { AmChartsDirective } from "amcharts3-angular2/amcharts.directive";
+
 
 
 
@@ -32,7 +34,7 @@ export const firebaseAuthConfig = {
     FormsModule, AppRouting, AuthModule, DashModule , DropdownModule.forRoot()
   ],
   declarations: [ AppComponent ,TripsComponent, TripDetailComponent , 
-  TripsFormComponent , PageNotFoundComponent , CollapseDirective , AddTripComponent
+  TripsFormComponent , PageNotFoundComponent , CollapseDirective , AddTripComponent , AmChartsDirective
   ],
   providers: [ TripService
   ],
