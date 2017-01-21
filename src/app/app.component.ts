@@ -176,8 +176,8 @@ export class AppComponent {
   },
 
   "areasSettings": {
-    "unlistedAreasColor": "#F9FAFC",
-    "unlistedAreasAlpha": 0.9
+    "unlistedAreasColor": "#286090",
+    "unlistedAreasAlpha": 1
   },
 
   "imagesSettings": {

@@ -1,11 +1,13 @@
 <br>
 <br>
   <div class="container">
-    <ul>
-        <li class="thumbnail tripCard col-md-2 col-xs-6" *ngFor="let trip of trips | async">
+            <li class="thumbnail tripCard col-md-2 col-xs-6" *ngFor="let trip of trips | async">
       
           <img class="img-circle" src="{{trip.photoUrl}}" alt="{{trip.userName}}" style="width:100%">
-          <p>{{ trip.userName }} wants trip from {{trip.from}} to {{trip.to}} on {{trip.date}} </p>
+          <p class="text-center">{{ trip.userName }}</p>
+          <p class="text-center"> Wants trip from</p>
+          <p class="text-center">{{trip.from}} to {{trip.to}} </p>
+          <p class="text-center"> on {{trip.date}} </p>
           <div class="row">
             <div class="col-md-6 col-xs-6">
               <button class="btn btn-sm btn-primary centerImg">I Go!</button>
@@ -31,7 +33,7 @@
           <p class="badge" style="margin-bottom:15px">{{trip.trippers}}</p>
           </a>
         </li>
-      </ul>
+    
     </div>
     
 

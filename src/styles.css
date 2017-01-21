@@ -1,12 +1,15 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+
 body {
   padding-top: 65px;
   padding-bottom: 40px;
   background: center center cover no-repeat fixed;
+  background-repeat:no-repeat;
 }
 
 h1 { 
-  opacity:0.8;
-  font-weight: bold;
+  color: #286090;
+  opacity:0.8;  
 }
 
 
