@@ -2,7 +2,6 @@
 
 body {
   padding-top: 65px;
-  padding-bottom: 40px;
   background: center center cover no-repeat fixed;
   background-repeat:no-repeat;
 }
@@ -17,6 +16,8 @@ h2 {
   color: #D15440;
   opacity:0.9;
 }
+
+
 
 .glyphicon {
     font-size: 25px;
@@ -116,5 +117,3 @@ h2 {
 .navbar-default .navbar-toggle {
     border-color: transparent;
 }
-
-

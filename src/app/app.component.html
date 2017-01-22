@@ -23,21 +23,22 @@
   </div>
 </nav>
 
-<!-- <img class="img-responsive centerImg" src="./assets/TripWithMe.png"/> -->
 <div class="container">
   <div class="well well-sm text-center" style="opacity: 0.8">
     <h1  style=" font-family: 'Lobster', sans-serif; font-size: 60px">TripWithMe</h1>
     <h2> Find Friends for Travel Around the World</h2>
   </div>
 </div>
-<div class="container">
-  <amCharts [id]="id" [options]="chart" [style.width.%]="100" [style.height.px]="500"></amCharts>
-</div>
 
- <router-outlet></router-outlet>
-<div class="footer">
+<router-outlet></router-outlet>
+
+
+<footer>
+<!--   <img src="./assets/bg2.jpg" style="width: 100%"> -->
     <!-- <ul>
         <li *ngIf="af.auth | async">LOGGED IN</li>
         <li *ngIf="!(af.auth | async)">NOT LOGGED IN</li>
     </ul> -->
-</div>
+</footer>
+
+
