@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"fo",
+				"font-size"
+			],
+			[
+				"b",
+				"background"
+			],
+			[
+				"onS",
+				"onsubmit\tvar"
+			],
+			[
 				"T",
 				"TripWithMe"
 			],
@@ -124,10 +136,6 @@
 				"false\tkeyword"
 			],
 			[
-				"b",
-				"boolean\tkeyword"
-			],
-			[
 				"borrar",
 				"borrarTarea\tproperty"
 			],
@@ -189,34 +197,46 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/portatil/angular/tripWithMe"
+		"/C/Users/portatil/angular/tripWithMe/src",
+		"/C/Users/portatil/angular/tripWithMe/src/app",
+		"/C/Users/portatil/angular/tripWithMe/src/app/trip"
 	],
 	"file_history":
 	[
-		"/C/Users/portatil/angular/tripWithMe/.gitignore",
-		"/C/Users/portatil/angular/tripWithMe/src/app/trip/addtrip.component.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/app.component.ts",
 		"/C/Users/portatil/angular/tripWithMe/src/app/trip/trips.component.html",
 		"/C/Users/portatil/angular/tripWithMe/src/styles.css",
+		"/C/Users/portatil/angular/tripWithMe/src/app/app.component.html",
+		"/C/Users/portatil/angular/tripWithMe/src/index.html",
+		"/C/Users/portatil/angular/tripWithMe/src/app/auth/signup2.component.ts",
+		"/C/Users/portatil/angular/tema8b/app/app.component.ts",
 		"/C/Users/portatil/angular/tripWithMe/src/app/app.module.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/auth/signup2.component.html",
+		"/C/Users/portatil/angular/tema8/app/app.component.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/trip/addtrip.component.ts",
+		"/C/Users/portatil/angular/tema7/app/secundaria.component.html",
+		"/C/Users/portatil/angular/tema7/app/child1.component.html",
+		"/C/Users/portatil/angular/tema7/app/secundaria.component.ts",
 		"/C/Users/portatil/angular/tripWithMe/src/app/trip/trips-form.component.html",
-		"/C/Users/portatil/angular/tripWithMe/src/app/app.component.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/auth/signup.component.html",
+		"/C/Users/portatil/angular/tripWithMe/src/app/auth/auth.component.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/auth/auth.routing.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/auth/auth.module.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/dashboard/settings.component.html",
+		"/C/Users/portatil/angular/tripWithMe/.gitignore",
 		"/C/Users/portatil/angular/tripWithMe/src/app/trip/trips-form.component.ts",
 		"/C/Users/portatil/angular/tripWithMe/src/app/app.routing.ts",
 		"/C/Users/portatil/angular/tripWithMe/src/app/trip/addtrip.component.html",
-		"/C/Users/portatil/angular/tripWithMe/src/app/app.component.html",
 		"/C/Users/portatil/angular/tripWithMe/src/app/dashboard/profile.component.html",
 		"/C/Users/portatil/angular/tripWithMe/src/app/dashboard/dashboard.component.html",
 		"/C/Users/portatil/angular/tripWithMe/src/app/dashboard/account.component.html",
-		"/C/Users/portatil/angular/tripWithMe/src/app/dashboard/settings.component.html",
 		"/C/Users/portatil/angular/tripWithMe/src/app/trip/trips.component.ts",
 		"/C/Users/portatil/angular/tripWithMe/src/app/trip/trip.ts",
 		"/C/Users/portatil/angular/tripWithMe/src/app/trip/trip.component.css",
 		"/C/Users/portatil/angular/angular2bands/src/app/components/select-band.component.ts",
 		"/C/Users/portatil/angular/tripWithMe/src/app/firebaseProject.ts",
 		"/C/Users/portatil/angular/firebase.json",
-		"/C/Users/portatil/angular/tripWithMe/src/index.html",
 		"/C/Users/portatil/angular/tripWithMe/src/app/dashboard/dashboard.routing.ts",
-		"/C/Users/portatil/angular/tripWithMe/src/app/auth/signup.component.html",
 		"/C/Users/portatil/angular/tripWithMe/src/app/auth/resetpassword.component.html",
 		"/C/Users/portatil/angular/tripWithMe/src/app/auth/login.component.html",
 		"/C/Users/portatil/angular/angular2bands/src/styles.css",
@@ -252,9 +272,7 @@
 		"/C/Users/portatil/angular/tripWithMe/src/app/trips.component.ts",
 		"/C/Users/portatil/angular/tripWithMe/src/app/trips-form.component.ts",
 		"/C/Users/portatil/angular/tripWithMe/src/app/userslogin.component.ts",
-		"/C/Users/portatil/angular/tripWithMe/src/app/auth/auth.component.ts",
 		"/C/Users/portatil/angular/tripWithMe/angular-cli.json",
-		"/C/Users/portatil/angular/tripWithMe/src/app/auth/auth.module.ts",
 		"/C/Users/portatil/angular/tripWithMe/src/app/auth/auth-guard.service.ts",
 		"/C/Users/portatil/angular/tripWithMe/src/app/users.component.ts",
 		"/C/Users/portatil/angular/tripWithMe/src/app/trip.service.ts",
@@ -266,7 +284,6 @@
 		"/C/Users/portatil/angular/tripWithMe/src/app/trips-form.component.html",
 		"/C/Users/portatil/angular/tripWithMe/src/app/users.component.html",
 		"/C/Users/portatil/angular/tripWithMe/src/app/users-form.component.html",
-		"/C/Users/portatil/angular/tema8/app/app.component.ts",
 		"/C/Users/portatil/angular/tema7/app/app.component.ts",
 		"/C/Users/portatil/angular/tema7/app/app.module.ts",
 		"/C/Users/portatil/angular/tripWithMe/src/app/users-form.component.ts",
@@ -279,7 +296,6 @@
 		"/C/Users/portatil/angular/tripWithMe/src/app/trips-form.component.css",
 		"/C/Users/portatil/angular/tripWithMe/src/app/paises-form.component.css",
 		"/C/Users/portatil/angular/tema8/app/app.module.ts",
-		"/C/Users/portatil/angular/tema8b/app/app.component.ts",
 		"/C/Users/portatil/angular/tripWithMe/src/trip.ts",
 		"/C/Users/portatil/angular/tripWithMe/src/main.ts",
 		"/C/Users/portatil/angular/tripWithMe/src/typings.d.ts",
@@ -314,17 +330,11 @@
 		"/C/Users/portatil/angular/tema11/app/app.component.spec.ts",
 		"/C/Users/portatil/angular/tema11/karma-test-shim.js",
 		"/C/Users/portatil/angular/tema11/prueba.js",
-		"/C/Users/portatil/angular/tema11/e2e/app.e2e-spec.ts",
-		"/C/Users/portatil/angular/tema11/spec/support/jasmine.json",
-		"/C/Users/portatil/angular/tema10b/app/app.component.ts",
-		"/C/Users/portatil/angular/tema10b/app/animales.service.ts",
-		"/C/Users/portatil/angular/tema10b/app/app.module.ts",
-		"/C/Users/portatil/angular/tema10b/app/animales.component.ts",
-		"/C/Users/portatil/angular/tema10b/app/animales.component.html"
+		"/C/Users/portatil/angular/tema11/e2e/app.e2e-spec.ts"
 	],
 	"find":
 	{
-		"height": 28.0
+		"height": 36.0
 	},
 	"find_in_files":
 	{
@@ -339,6 +349,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"21px",
 			" UsersControlComponent",
 			"size",
 			"\t\n",

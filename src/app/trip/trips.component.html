@@ -1,39 +1,38 @@
 <br>
 <br>
   <div class="container">
-            <li class="thumbnail tripCard col-md-2 col-xs-6" *ngFor="let trip of trips | async">
-      
-          <img class="img-circle" src="{{trip.photoUrl}}" alt="{{trip.userName}}" style="width:100%">
-          <p class="text-center">{{ trip.userName }}</p>
-          <p class="text-center"> Wants trip from</p>
-          <p class="text-center">{{trip.from}} to {{trip.to}} </p>
-          <p class="text-center"> on {{trip.date}} </p>
-          <div class="row">
-            <div class="col-md-6 col-xs-6">
-              <button class="btn btn-sm btn-primary centerImg">I Go!</button>
-            </div>
-            <div class="col-md-6 col-xs-6">
-              <button class="btn btn-sm btn-primary centerImg">Chat</button>
-            </div>
-          </div>
-          <br>
-          <a *ngIf="(trip.isPlane)" class='my-tool-tip' data-toggle="tooltip" data-placement="left" title="Trip by Plane">
-            <span class='glyphicon glyphicon-plane logo-small'></span>
-          </a>
-          <a *ngIf="(trip.isRoad)" class='my-tool-tip' data-toggle="tooltip" data-placement="left" title="Trip by Road">
-            <span class='glyphicon glyphicon-road logo-small text-danger'></span>
-          </a>
-          <a *ngIf="(trip.isLowCost)" class='my-tool-tip' data-toggle="tooltip" data-placement="left" title="Trip Low Cost">
-            <span class='glyphicon glyphicon-euro text-warning'></span>
-          </a>
-          <a *ngIf="(trip.isAny)" class='my-tool-tip' data-toggle="tooltip" data-placement="left" title="Any Date , Any Place">
-            <span class='glyphicon glyphicon-asterisk text-success'></span>
-          </a>
-           <a class='my-tool-tip' data-toggle="tooltip" data-placement="left" title="Users Go With">
-          <p class="badge" style="margin-bottom:15px">{{trip.trippers}}</p>
-          </a>
-        </li>
+    <li class="thumbnail tripCard col-md-2 col-xs-6" *ngFor="let trip of trips | async">  
+      <img class="img-circle" src="{{trip.photoUrl}}" alt="{{trip.userName}}" style="width:100%">
+      <p class="text-center">{{ trip.userName }}</p>
+      <p class="text-center"> Wants trip from</p>
+      <p class="text-center">{{trip.from}} to {{trip.to}} </p>
+      <p class="text-center"> on {{trip.date}} </p>
+      <div class="row">
+        <div class="col-md-6 col-xs-6">
+          <button class="btn btn-sm btn-primary centerImg">I Go!</button>
+        </div>
+        <div class="col-md-6 col-xs-6">
+          <button class="btn btn-sm btn-primary centerImg">Chat</button>
+        </div>
+      </div>
+      <br>
+      <a *ngIf="(trip.isPlane)" class='my-tool-tip' data-toggle="tooltip" data-placement="left" title="Trip by Plane">
+        <span class='glyphicon glyphicon-plane logo-small'></span>
+      </a>
+      <a *ngIf="(trip.isRoad)" class='my-tool-tip' data-toggle="tooltip" data-placement="left" title="Trip by Road">
+        <span class='glyphicon glyphicon-road logo-small text-danger'></span>
+      </a>
+      <a *ngIf="(trip.isLowCost)" class='my-tool-tip' data-toggle="tooltip" data-placement="left" title="Trip Low Cost">
+        <span class='glyphicon glyphicon-euro text-warning'></span>
+      </a>
+      <a *ngIf="(trip.isAny)" class='my-tool-tip' data-toggle="tooltip" data-placement="left" title="Any Date , Any Place">
+        <span class='glyphicon glyphicon-asterisk text-success'></span>
+      </a>
+       <a class='my-tool-tip' data-toggle="tooltip" data-placement="left" title="Users Go With">
+      <p class="badge" style="margin-bottom:21px">{{trip.trippers}}</p>
+      </a>
+    </li>
     
-    </div>
+  </div>
     
 

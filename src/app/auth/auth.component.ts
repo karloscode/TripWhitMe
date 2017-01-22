@@ -1,6 +1,5 @@
 import { Component, Inject } from '@angular/core';
 import { Router } from '@angular/router';
-
 import { AngularFire, FirebaseApp } from 'angularfire2';
 
 @Component({
