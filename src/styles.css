@@ -17,7 +17,27 @@ h2 {
   opacity:0.9;
 }
 
-
+#grayOutDiv
+{
+    background-color: #333;
+    opacity: 0.7;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: 9999;
+}
+ 
+.flash-message 
+{
+    z-index: 10000;
+    position: relative;
+    text-align: center;
+    font-size: 25px;
+    margin: 25px;
+}
 
 .glyphicon {
     font-size: 25px;
@@ -30,6 +50,12 @@ h2 {
   display: inline-block;
   *display:inline; /* ie7 fix */
   float: none; /* this is the part that makes it work */
+
+}
+
+.badgeUsersGo {
+  margin-bottom:16px ;
+  font-size:17px ;
 
 }
 

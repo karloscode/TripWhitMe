@@ -3,11 +3,12 @@ import { AngularFire } from 'angularfire2'
 import { Router } from '@angular/router';
 import { CollapseDirective } from 'ng2-bootstrap';
 import { DropdownModule } from 'ng2-bootstrap';
+import { MessagesComponent } from 'ng2-messages/ng2-messages';
 
 
 @Component({
   selector: 'app-root',
-  templateUrl: 'app.component.html'
+  templateUrl: 'app.component.html',
 })
 export class AppComponent { 
   public isCollapsed: boolean = true;

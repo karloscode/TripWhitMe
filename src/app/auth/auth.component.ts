@@ -1,6 +1,8 @@
 import { Component, Inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { AngularFire, FirebaseApp } from 'angularfire2';
+import { FlashMessagesService } from 'angular2-flash-messages';
+
 
 @Component({
   templateUrl: './signup.component.html'
@@ -9,7 +11,7 @@ import { AngularFire, FirebaseApp } from 'angularfire2';
 export class SignupComponent {
   public error: any;
 
-  constructor(private af: AngularFire, private router: Router) {  }
+  constructor(private af: AngularFire , private router: Router , private _flashMessagesService: FlashMessagesService) {  }
 
   onSubmit(formData) {
     if(formData.valid) {
@@ -20,11 +22,15 @@ export class SignupComponent {
       }).then(
         (success) => {
         console.log(success);
-        this.router.navigate(['/signup2'])
+          this._flashMessagesService.grayOut(true);
+          this._flashMessagesService.show('Success!', { cssClass: 'alert-success', timeout: 3000 });
+          this.router.navigate(['/signup2'])
       }).catch(
         (err) => {
-        console.log(err);
-        this.router.navigate(['/login']);
+          console.log(err);
+          this._flashMessagesService.grayOut(true);
+          this._flashMessagesService.show(''+err, { cssClass: 'alert-danger', timeout: 5000 });
+          this.router.navigate(['/signup']);
       })
     } else {
       this.error = 'Your form is invalid';
@@ -39,7 +45,7 @@ export class SignupComponent {
 export class LoginComponent {
   public error: any;
 
-  constructor(private af: AngularFire, private router: Router) { }
+  constructor(private af: AngularFire, private router: Router , private _flashMessagesService: FlashMessagesService) { }
 
   onSubmit(formData) {
     if(formData.valid) {
@@ -49,12 +55,16 @@ export class LoginComponent {
         password: formData.value.password
       }).then(
         (success) => {
-        console.log(success);
-        this.router.navigate(['/dashboard']);
+          console.log(success);
+          this._flashMessagesService.grayOut(true);
+          this._flashMessagesService.show('Success!', { cssClass: 'alert-success', timeout: 3000 });
+          this.router.navigate(['/dashboard']);
       }).catch(
         (err) => {
-        console.log(err);
-        this.router.navigate(['/dashboard']);
+          console.log(err);
+          this._flashMessagesService.grayOut(true);
+          this._flashMessagesService.show(''+err, { cssClass: 'alert-danger', timeout: 5000 });
+          this.router.navigate(['/dashboard']);
       })
     } else {
       this.error = 'Your form is invalid';
@@ -68,8 +78,7 @@ export class LoginComponent {
 
 export class ResetpassComponent {
   public auth: any;
-  public message: any;
-  constructor(private af: AngularFire, @Inject(FirebaseApp) firebaseApp: any) {
+  constructor(private af: AngularFire, @Inject(FirebaseApp) firebaseApp: any , private _flashMessagesService: FlashMessagesService) {
     this.auth = firebaseApp.auth()
     console.log(this.auth);
   }
@@ -80,11 +89,13 @@ export class ResetpassComponent {
        this.auth.sendPasswordResetEmail(formData.value.email)
          .then( (response) => {
            console.log('Sent successfully');
-           this.message = 'Check your email for reset link';
+           this._flashMessagesService.grayOut(true);
+           this._flashMessagesService.show('Sent successfully!', { cssClass: 'alert-success', timeout: 3000 })
          })
          .catch( (error) => {
-           this.message = error;
            console.log(error);
+           this._flashMessagesService.grayOut(true);
+           this._flashMessagesService.show(''+error, { cssClass: 'alert-danger', timeout: 5000 });
          })
      }
   }

@@ -17,7 +17,8 @@ import { firebaseConfig } from './firebaseProject';
 import { CollapseDirective } from 'ng2-bootstrap';
 import { DropdownModule } from 'ng2-bootstrap';
 import { AmChartsDirective } from "amcharts3-angular2/amcharts.directive";
-import { WorldMapComponent} from './maps/worldmap.component'
+import { WorldMapComponent} from './maps/worldmap.component';
+import { FlashMessagesModule } from 'angular2-flash-messages';
 
 
 
@@ -32,14 +33,13 @@ export const firebaseAuthConfig = {
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(firebaseConfig ,firebaseAuthConfig),
-    FormsModule, AppRouting, AuthModule, DashModule , DropdownModule.forRoot()
+    FormsModule, AppRouting, AuthModule, DashModule , DropdownModule.forRoot() , FlashMessagesModule
   ],
   declarations: [ AppComponent ,TripsComponent, TripDetailComponent , 
   TripsFormComponent , PageNotFoundComponent , CollapseDirective , AddTripComponent , AmChartsDirective , 
   WorldMapComponent
   ],
-  providers: [ TripService
-  ],
+  providers: [ TripService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule {}

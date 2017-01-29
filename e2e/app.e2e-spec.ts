@@ -1,10 +1,10 @@
-import { TripWithMePage } from './app.po';
+import { TripwithmePage } from './app.po';
 
-describe('trip-with-me App', function() {
-  let page: TripWithMePage;
+describe('tripwithme App', function() {
+  let page: TripwithmePage;
 
   beforeEach(() => {
-    page = new TripWithMePage();
+    page = new TripwithmePage();
   });
 
   it('should display message saying app works', () => {
