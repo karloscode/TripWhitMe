@@ -19,7 +19,7 @@ export class Signup2Component {
   constructor(@Inject(FirebaseApp) firebaseApp: any , private router: Router , private _flashMessagesService: FlashMessagesService) {
     this.auth = firebaseApp.auth();
     console.log(this.auth);
-    this.avatares = ["./assets/avataricon1.png","./assets/avataricon2.png","./assets/avataricon3.png","./assets/avataricon4.png","./assets/avataricon5.png","./assets/avataricon6.png"]
+    this.avatares = ["./assets/avataricon1.jpg","./assets/avataricon2.jpg","./assets/avataricon3.jpg","./assets/avataricon4.jpg","./assets/avataricon5.jpg","./assets/avataricon6.jpg"]
   }
 
   ngOnInit() {
