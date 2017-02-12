@@ -28,7 +28,16 @@ h2 {
     overflow: hidden;
     z-index: 9999;
 }
- 
+
+/*form validation classes*/
+.ng-valid[required], .ng-valid.required {
+	border-left: 5px solid #42A948;
+}
+.ng-invalid:not(form) {
+	border-left: 5px solid #a94442;
+}
+
+/*info message to users*/
 .flash-message 
 {
     z-index: 10000;
@@ -38,10 +47,12 @@ h2 {
     margin: 25px;
 }
 
+/*bootstrap icons size*/
 .glyphicon {
     font-size: 25px;
 }
 
+/*cards for users trips in principal page*/
 .tripCard {
   padding: 15px;
   margin: 0 auto;
@@ -49,7 +60,8 @@ h2 {
   display: inline-block;
   *display:inline; /* ie7 fix */
   float: none; /* this is the part that makes it work */
-
+  height: 100%;
+  vertical-align: top;
 }
 
 .badgeUsersGo {

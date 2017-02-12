@@ -32,23 +32,27 @@
 				</div>
 			</div>
 			<div class="form-group col-md-3">
+				<span class='glyphicon glyphicon-plane logo-small text-danger'></span>
 				<label for="isPlane">Travel by Plane?</label>
 				<input type="checkbox"  name="isPlane" [(ngModel)]="model.isPlane" #isPlane="ngModel" [value]=true>
 			</div>
 			<div class="form-group col-md-3">
+				<span class='glyphicon glyphicon-road logo-small text-danger'></span>
 				<label for="isRoad">Travel by Road?</label>
 				<input type="checkbox"  name="isRoad" [(ngModel)]="model.isRoad" #isRoad="ngModel" [value]=true>
 			</div>
 			<div class="form-group col-md-3">
-				<label for="isLowCost">This Trip is Low Cost?</label>
+				<span class='glyphicon glyphicon-euro logo-small text-danger'></span>
+				<label for="isLowCost" >This Trip is Low Cost?</label>
 				<input type="checkbox"  name="isLowCost" [(ngModel)]="model.isLowCost" #isLowCost="ngModel" [value]=true>
 			</div>
 			<div class="form-group col-md-3">
+				<span class='glyphicon glyphicon-asterisk logo-small text-danger'></span>
 				<label for="isAny">Trip to any place in any time?</label>
 				<input type="checkbox"  name="isAny" [(ngModel)]="model.isAny" #isLowCost="ngModel" [value]=true>
 			</div>
 			<br>
-			<button type="submit" class="btn btn-default btn-danger centerImg" [disabled]="!TripForm.form.valid">Submit</button>
+			<button type="submit" class="btn btn-default btn-danger centerImg" [disabled]="!TripForm.form.valid">Submit Trip</button>
 		</form>
 		<br>
 		<div class="container">

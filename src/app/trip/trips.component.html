@@ -3,11 +3,9 @@
   <div class="container">
     <li class="thumbnail tripCard col-md-2 col-xs-6" *ngFor="let trip of trips | async">  
       <img class="img-circle" src="{{trip.photoUrl}}" alt="{{trip.userName}}" style="width:100% ; margin-bottom: 4px">
-      <h4 class="text-center">{{ trip.userName }}</h4>
-      <!--<p class="text-center"> Wants Trip From</p>-->
-      <p class="text-center" style="font-weight:bold">From {{trip.from.name}} </p>
-      <!--<p class="text-center"> To </p>-->
-      <p class="text-center" style="font-weight:bold">To {{trip.to.name}} </p>
+      <h4 class="text-center"style="font-weight:bold"> {{ trip.userName }}</h4>
+      <p class="text-center" style="font-weight:bold">From: {{trip.from.name}} </p>
+      <p class="text-center" style="font-weight:bold">To: {{trip.to.name}} </p>
       <p class="text-center"> Date: {{trip.date}} </p>
       <a *ngIf="(trip.isPlane)" class='my-tool-tip' data-toggle="tooltip" data-placement="left" title="Trip by Plane">
         <span class='glyphicon glyphicon-plane logo-small'></span>
