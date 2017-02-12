@@ -5,14 +5,16 @@
 		<form (ngSubmit)="onSubmit()" #TripForm="ngForm">
 			<div class="form-group col-md-4">
 				<label for="from">From</label>
-				<input type="text" class="form-control" id="from" [(ngModel)]="model.from" name="from" required #from="ngModel">
+				<!--<input type="text" class="form-control" id="from" [(ngModel)]="model.from" name="from" required #from="ngModel">-->
+				<input type="text" class="form-control" id="from.name" [(ngModel)] = "model.from.name" name="from.name" (setAddress) = "getAddressFrom($event)" required #from = "ngModel" googleplace/>
 				<div [hidden]="from.valid || from.pristine" class="alert alert-danger">
 				From Place it´s mandatory
 				</div>
+
 			</div>
 			<div class="form-group col-md-4">
 				<label for="to">To</label>
-				<input type="text" class="form-control" id="to" [(ngModel)]="model.to" name="to" required #to="ngModel">
+				<input type="text" class="form-control" id="to.name" [(ngModel)]="model.to.name" name="to.name" (setAddress) = "getAddressTo($event)" required #to="ngModel" googleplace/>
 				<div [hidden]="to.valid || to.pristine" class="alert alert-danger">
 				To Place it´s mandatory
 				</div>
@@ -21,7 +23,7 @@
 				<label for="map">Map</label>
 				<input type="text" class="form-control" id="map" [(ngModel)]="model.map" name="map">
 			</div>
-	 -->
+	    -->
 			<div class="form-group col-md-4">
 				<label for="date">Date</label>
 				<input type="date" class="form-control" id="date" [(ngModel)]="model.date" name="date" required #date="ngModel">
@@ -29,31 +31,29 @@
 				You must submit a date
 				</div>
 			</div>
-			<div class="form-group col-md-4">
+			<div class="form-group col-md-3">
 				<label for="isPlane">Travel by Plane?</label>
-				<input type="radio"  name="isPlane" [(ngModel)]="model.isPlane" #isPlane="ngModel" [value]=true>
-				<input type="radio" name="isPlane" [(ngModel)]="model.isPlane" #isPlane="ngModel" [value]=false>
+				<input type="checkbox"  name="isPlane" [(ngModel)]="model.isPlane" #isPlane="ngModel" [value]=true>
 			</div>
-			<div class="form-group col-md-4">
+			<div class="form-group col-md-3">
 				<label for="isRoad">Travel by Road?</label>
-				<input type="radio"  name="isRoad" [(ngModel)]="model.isRoad" #isRoad="ngModel" [value]=true>
-				<input type="radio" name="isRoad" [(ngModel)]="model.isRoad" #isRoad="ngModel" [value]=false>
+				<input type="checkbox"  name="isRoad" [(ngModel)]="model.isRoad" #isRoad="ngModel" [value]=true>
 			</div>
-			<div class="form-group col-md-4">
+			<div class="form-group col-md-3">
 				<label for="isLowCost">This Trip is Low Cost?</label>
-				<input type="radio"  name="isLowCost" [(ngModel)]="model.isLowCost" #isLowCost="ngModel" [value]=true>
-				<input type="radio" name="isLowCost" [(ngModel)]="model.isLowCost" #isLowCost="ngModel" [value]=false>
+				<input type="checkbox"  name="isLowCost" [(ngModel)]="model.isLowCost" #isLowCost="ngModel" [value]=true>
 			</div>
-			<div class="form-group col-md-4">
+			<div class="form-group col-md-3">
 				<label for="isAny">Trip to any place in any time?</label>
-				<input type="radio"  name="isAny" [(ngModel)]="model.isAny" #isLowCost="ngModel" [value]=true>
-				<input type="radio" name="isAny" [(ngModel)]="model.isAny" #isLowCost="ngModel" [value]=false>
+				<input type="checkbox"  name="isAny" [(ngModel)]="model.isAny" #isLowCost="ngModel" [value]=true>
 			</div>
-
-
-
+			<br>
 			<button type="submit" class="btn btn-default btn-danger centerImg" [disabled]="!TripForm.form.valid">Submit</button>
 		</form>
+		<br>
+		<div class="container">
+	  		<amCharts [id]="id" [options]="chart" [style.width.%]="100" [style.height.px]="500"></amCharts>
+		</div>
 
 	</div>
 </div>

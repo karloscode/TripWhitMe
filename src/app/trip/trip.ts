@@ -1,8 +1,9 @@
+import { Place } from "./place"
 export class Trip {
  id: string;
  uid: string;
- from: string;
- to: string;
+ from: Place;
+ to: Place;
  map: string;
  date: string;
  userName: string;
@@ -13,7 +14,7 @@ export class Trip {
  isLowCost: boolean;
  isAny: boolean;
 
- constructor (uid:string, from: string, to: string, map: string, 
+ constructor (uid:string, from: Place, to: Place, map: string, 
  	date: string, userName: string , photoUrl: string , trippers: string[] ,
  	isPlane: boolean , isRoad: boolean , isLowCost: boolean , isAny: boolean
  ){

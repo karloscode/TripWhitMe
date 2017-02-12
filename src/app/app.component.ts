@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { CollapseDirective } from 'ng2-bootstrap';
 import { DropdownModule } from 'ng2-bootstrap';
 import { MessagesComponent } from 'ng2-messages/ng2-messages';
+import {GoogleplaceDirective} from './directives/googleplace.directive';
 
 
 @Component({

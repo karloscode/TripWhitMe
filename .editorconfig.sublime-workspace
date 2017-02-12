@@ -1,0 +1,500 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"b",
+				"button\tTag"
+			],
+			[
+				"im",
+				"implantado\tparameter"
+			],
+			[
+				"emb",
+				"embalaje\tparameter"
+			],
+			[
+				"tro",
+				"troquelado\tparameter"
+			],
+			[
+				"tr",
+				"troquel\tparameter"
+			],
+			[
+				"con",
+				"contracolado\tparameter"
+			],
+			[
+				"si",
+				"font-size"
+			],
+			[
+				"Flash",
+				"FlashMessagesService\talias"
+			],
+			[
+				"container",
+				"container-fluid"
+			],
+			[
+				"s",
+				"src\tAttr"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"a",
+				"avatar\tproperty"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"onS",
+				"onsubmit\tvar"
+			],
+			[
+				"T",
+				"TripWithMe"
+			],
+			[
+				"User",
+				"UserService\tclass"
+			],
+			[
+				"user",
+				"UserService\tclass"
+			],
+			[
+				"glo",
+				"globs\talias"
+			],
+			[
+				"u",
+				"userName\tvar"
+			],
+			[
+				"us",
+				"userService\tproperty"
+			],
+			[
+				"in",
+				"Input\talias"
+			],
+			[
+				"pass",
+				"passwd"
+			],
+			[
+				"p",
+				"Password"
+			],
+			[
+				"o",
+				"OnInit\talias"
+			],
+			[
+				"F",
+				"FirebaseUserConfig\talias"
+			],
+			[
+				"get",
+				"_getNow\tmethod"
+			],
+			[
+				"nu",
+				"number\tkeyword"
+			],
+			[
+				"Ob",
+				"Observable\talias"
+			],
+			[
+				"Anima",
+				"AnimalesService\talias"
+			],
+			[
+				"Pi",
+				"PipeTransform\talias"
+			],
+			[
+				"r",
+				"required\tmethod"
+			],
+			[
+				"V",
+				"Validators\talias"
+			],
+			[
+				"pa",
+				"pais\tparameter"
+			],
+			[
+				"Pa",
+				"Pais\talias"
+			],
+			[
+				"P",
+				"Pais\talias"
+			],
+			[
+				"Pai",
+				"PaisesService\talias"
+			],
+			[
+				"text-a",
+				"text-align"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"ret",
+				"return\tkeyword"
+			],
+			[
+				"sh",
+				"showImg\tproperty"
+			],
+			[
+				"cons",
+				"console\tvar"
+			],
+			[
+				"Emplea",
+				"Empleado\talias"
+			],
+			[
+				"fa",
+				"false\tkeyword"
+			],
+			[
+				"borrar",
+				"borrarTarea\tproperty"
+			],
+			[
+				"TAREA",
+				"Tarea\talias"
+			],
+			[
+				"ti",
+				"TimeRanges\tinterface"
+			],
+			[
+				"t",
+				"this\tkeyword"
+			],
+			[
+				"nom",
+				"nombreEmpresa"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 432.0
+	},
+	"console":
+	{
+		"height": 160.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/portatil/angular/tripWithMe/src/app/trip/addtrip.component.ts",
+		"/C/Users/portatil/angular/plvamedida/src/app/jobs/jobs-table.component.html",
+		"/C/Users/portatil/angular/plvamedida/src/app/auth/login.component.html",
+		"/C/Users/portatil/angular/plvamedida/src/app/app.component.html",
+		"/C/Users/portatil/angular/plvamedida/src/app/jobs/jobs-table.component.ts",
+		"/C/Users/portatil/angular/plvamedida/src/index.html",
+		"/C/Users/portatil/angular/plvamedida/src/styles.css",
+		"/C/Users/portatil/angular/tema8/app/app.component.ts",
+		"/C/Users/portatil/angular/tema8/app/paises-form.component.html",
+		"/C/Users/portatil/angular/plvamedida/src/app/services/jobs.service.ts",
+		"/C/Users/portatil/angular/plvamedida/src/app/models/job.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/trip/trips.component.html",
+		"/C/Users/portatil/angular/tripWithMe/src/app/trip/trips.component.ts",
+		"/C/Users/portatil/angular/plvamedida/src/app/jobs/jobs.module.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/trip/trip.service.ts",
+		"/C/Users/portatil/angular/plvamedida/src/app/app.routing.ts",
+		"/C/Users/portatil/angular/plvamedida/src/app/jobs/jobs.routing.ts",
+		"/C/Users/portatil/angular/plvamedida/src/app/auth/auth-guard.service.ts",
+		"/C/Users/portatil/angular/plvamedida/src/app/app.component.ts",
+		"/C/Users/portatil/angular/plvamedida/src/app/app.module.ts",
+		"/C/Users/portatil/angular/plvamedida/src/app/auth/auth.component.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/app.routing.ts",
+		"/C/Users/portatil/angular/plvamedida/src/app/dashboard/dashboard.routing.ts",
+		"/C/Users/portatil/angular/plvamedida/src/app/auth/signup2.component.html",
+		"/C/Users/portatil/angular/plvamedida/src/app/auth/signup.component.html",
+		"/C/Users/portatil/angular/plvamedida/src/app/firebaseProject.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/trip/trip.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/auth/signup2.component.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/auth/signup2.component.html",
+		"/C/Users/portatil/angular/tripWithMe/src/styles.css",
+		"/C/Users/portatil/angular/tripWithMe/tripwithme/src/app/app.component.css",
+		"/C/Users/portatil/angular/tripWithMe/.firebaserc",
+		"/C/Users/portatil/angular/tripWithMe/src/app/auth/auth.component.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/app.component.html",
+		"/C/Users/portatil/angular/tripWithMe/src/app/auth/signup.component.html",
+		"/C/Users/portatil/angular/tripWithMe/src/app/app.component.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/app.module.ts",
+		"/C/Users/portatil/angular/ani-angular-2-master/src/client/app/dashboard/dashboard.component.html",
+		"/C/Users/portatil/angular/tripWithMe/src/index.html",
+		"/C/Users/portatil/angular/tripWithMe/src/app/maps/worldmap.component.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/maps/worldmap.component.html",
+		"/C/Users/portatil/angular/tripWithMe/src/app/index.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/assets/bg_footer.jpg",
+		"/C/Users/portatil/angular/tema8b/app/app.component.ts",
+		"/C/Users/portatil/angular/angular2bands/src/app/views/app.component.html",
+		"/C/Users/portatil/angular/tema7/app/secundaria.component.html",
+		"/C/Users/portatil/angular/tema7/app/child1.component.html",
+		"/C/Users/portatil/angular/tema7/app/secundaria.component.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/trip/trips-form.component.html",
+		"/C/Users/portatil/angular/tripWithMe/src/app/auth/auth.routing.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/auth/auth.module.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/dashboard/settings.component.html",
+		"/C/Users/portatil/angular/tripWithMe/.gitignore",
+		"/C/Users/portatil/angular/tripWithMe/src/app/trip/trips-form.component.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/trip/addtrip.component.html",
+		"/C/Users/portatil/angular/tripWithMe/src/app/dashboard/profile.component.html",
+		"/C/Users/portatil/angular/tripWithMe/src/app/dashboard/dashboard.component.html",
+		"/C/Users/portatil/angular/tripWithMe/src/app/dashboard/account.component.html",
+		"/C/Users/portatil/angular/tripWithMe/src/app/trip/trip.component.css",
+		"/C/Users/portatil/angular/angular2bands/src/app/components/select-band.component.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/firebaseProject.ts",
+		"/C/Users/portatil/angular/firebase.json",
+		"/C/Users/portatil/angular/tripWithMe/src/app/dashboard/dashboard.routing.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/auth/resetpassword.component.html",
+		"/C/Users/portatil/angular/tripWithMe/src/app/auth/login.component.html",
+		"/C/Users/portatil/angular/angular2bands/src/styles.css",
+		"/C/Users/portatil/angular/angular2bands/src/app/app.module.ts",
+		"/C/Users/portatil/angular/angular2bands/src/app/app.component.ts",
+		"/C/Users/portatil/angular/angular2bands/src/index.html",
+		"/C/Users/portatil/angular/tripWithMe/src/app/users/userslogin.component.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/home/home.component.ts",
+		"/C/Users/portatil/Desktop/bs4/bootstrap-4.0.0-alpha.5/docs/examples/signin/signin.css",
+		"/C/Users/portatil/angular/tripWithMe/src/app/app.component.css",
+		"/C/Users/portatil/angular/tripWithMe/package.json",
+		"/C/Users/portatil/angular/AngularFire2-Authentication/app/firebaseProject-Sample.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/dashboard/child.component.ts",
+		"/C/Users/portatil/angular/AngularFire2-Authentication/app/app.module.ts",
+		"/C/Users/portatil/angular/src_twm/app/app.component.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/home/home.component.html",
+		"/C/Users/portatil/angular/tripWithMe/src/app/trip/trip.component,css.css",
+		"/C/Users/portatil/angular/tripWithMe/src/app/login-auth-status.component.ts",
+		"/C/Users/portatil/angular/AngularFire2-Authentication/index.html",
+		"/C/Users/portatil/angular/AngularFire2-Authentication/app/app.component.ts",
+		"/C/Users/portatil/angular/AngularFire2-Authentication/app/app.component.html",
+		"/C/Users/portatil/angular/AngularFire2-Authentication/app/auth/auth.component.ts",
+		"/C/Users/portatil/angular/AngularFire2-Authentication/app/dashboard/child.component.ts",
+		"/C/Users/portatil/angular/AngularFire2-Authentication/app/dashboard/dashboard.component.ts",
+		"/C/Users/portatil/angular/AngularFire2-Authentication/app/main.ts",
+		"/C/Users/portatil/angular/AngularFire2-Authentication/app/app.routing.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/user.service.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/dashboard/dashboard.module.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/trips.component.html",
+		"/C/Users/portatil/angular/tripWithMe/src/app/dashboard/dashboard.component.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/trips.component.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/trips-form.component.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/userslogin.component.ts",
+		"/C/Users/portatil/angular/tripWithMe/angular-cli.json",
+		"/C/Users/portatil/angular/tripWithMe/src/app/auth/auth-guard.service.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/users.component.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/trip.service.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/userslogout.component.ts",
+		"/C/Users/portatil/angular/ani-angular-2-master/src/client/app/dashboard/blank-page/blankPage.module.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/miniUser.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/globals.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/trip.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/trips-form.component.html",
+		"/C/Users/portatil/angular/tripWithMe/src/app/users.component.html",
+		"/C/Users/portatil/angular/tripWithMe/src/app/users-form.component.html",
+		"/C/Users/portatil/angular/tema7/app/app.component.ts",
+		"/C/Users/portatil/angular/tema7/app/app.module.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/users-form.component.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/user.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/trip-detail.component.ts",
+		"/C/Users/portatil/angular/tema8/app/paises-form.component.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/TripWithMe.png",
+		"/C/Users/portatil/angular/tema8/app/paises.service.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/app/trips-form.component.css",
+		"/C/Users/portatil/angular/tripWithMe/src/app/paises-form.component.css",
+		"/C/Users/portatil/angular/tema8/app/app.module.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/trip.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/main.ts",
+		"/C/Users/portatil/angular/tripWithMe/src/typings.d.ts",
+		"/C/Users/portatil/Desktop/items.json",
+		"/C/Users/portatil/angular/tripWithMe/src/app/main.ts",
+		"/C/Users/portatil/angular/tripWithMe/node_modules/angular-cli/node_modules/protractor/typings/browser/ambient/request/index.d.ts",
+		"/C/Users/portatil/angular/tema11c/app/calculadora.component.ts",
+		"/C/Users/portatil/angular/tema11c/app/calculadora.component.spec.ts",
+		"/C/Users/portatil/angular/tema11c/app/app.component.ts"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 96.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"div",
+			"worlddmap",
+			"21px",
+			" UsersControlComponent",
+			"size",
+			"\t\n",
+			"persona",
+			"import",
+			"setDept",
+			";\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 36.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": ".editorconfig.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 281.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

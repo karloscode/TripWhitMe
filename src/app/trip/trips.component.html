@@ -2,20 +2,13 @@
   <br>
   <div class="container">
     <li class="thumbnail tripCard col-md-2 col-xs-6" *ngFor="let trip of trips | async">  
-      <img class="img-circle" src="{{trip.photoUrl}}" alt="{{trip.userName}}" style="width:100%">
-      <p class="text-center">{{ trip.userName }}</p>
-      <p class="text-center"> Wants trip from</p>
-      <p class="text-center">{{trip.from}} to {{trip.to}} </p>
-      <p class="text-center"> on {{trip.date}} </p>
-      <div class="row">
-        <div class="col-md-6 col-xs-6">
-          <button class="btn btn-sm btn-primary centerImg">I Go!</button>
-        </div>
-        <div class="col-md-6 col-xs-6">
-          <button class="btn btn-sm btn-primary centerImg">Chat</button>
-        </div>
-      </div>
-      <br>
+      <img class="img-circle" src="{{trip.photoUrl}}" alt="{{trip.userName}}" style="width:100% ; margin-bottom: 4px">
+      <h4 class="text-center">{{ trip.userName }}</h4>
+      <!--<p class="text-center"> Wants Trip From</p>-->
+      <p class="text-center" style="font-weight:bold">From {{trip.from.name}} </p>
+      <!--<p class="text-center"> To </p>-->
+      <p class="text-center" style="font-weight:bold">To {{trip.to.name}} </p>
+      <p class="text-center"> Date: {{trip.date}} </p>
       <a *ngIf="(trip.isPlane)" class='my-tool-tip' data-toggle="tooltip" data-placement="left" title="Trip by Plane">
         <span class='glyphicon glyphicon-plane logo-small'></span>
       </a>
@@ -31,6 +24,14 @@
        <a class='my-tool-tip' data-toggle="tooltip" data-placement="left" title="Users Go With">
       <p class="badge badgeUsersGo">{{trip.trippers}}</p>
       </a>
+      <div class="row">
+        <div class="col-md-6 col-xs-6">
+          <button class="btn btn-sm btn-primary centerImg">I Go!</button>
+        </div>
+        <div class="col-md-6 col-xs-6">
+          <button class="btn btn-sm btn-primary centerImg">Chat</button>
+        </div>
+      </div>
     </li>
     
   </div>

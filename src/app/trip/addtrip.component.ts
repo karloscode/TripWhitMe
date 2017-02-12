@@ -3,10 +3,15 @@ import { TripService } from './trip.service';
 import { AngularFire, FirebaseApp } from 'angularfire2';
 import { TripsFormComponent } from './trips-form.component';
 import { Router } from '@angular/router';
+import {GoogleplaceDirective} from '../directives/googleplace.directive';
+
+
+
 
 @Component({
   selector: 'addtrip',
   templateUrl: 'addtrip.component.html',
+
 })
 export class AddTripComponent implements OnInit {
   public userData: any;
@@ -29,5 +34,6 @@ export class AddTripComponent implements OnInit {
     this.tripService.newTrip(newTrip);
     this.router.navigate(['/']);
   }
+
 
 }
