@@ -16,6 +16,7 @@ h2 {
   opacity:0.9;
 }
 
+/*dark screen in message*/
 #grayOutDiv
 {
     background-color: #333;
@@ -52,6 +53,7 @@ h2 {
     font-size: 25px;
 }
 
+
 /*cards for users trips in principal page*/
 .tripCard {
   padding: 15px;
@@ -60,17 +62,14 @@ h2 {
   display: inline-block;
   *display:inline; /* ie7 fix */
   float: none; /* this is the part that makes it work */
-  height: 100%;
-  vertical-align: top;
 }
-
+/*number of users go to one trip in tripcard*/
 .badgeUsersGo {
   margin-bottom:16px ;
   font-size:17px ;
-
 }
 
-
+/*bacKground image adjust*/
 .bgImg {
   background-repeat: no-repeat;
   background-position: center center;
@@ -80,13 +79,13 @@ h2 {
   -o-background-size: cover;
   background-size: cover;
 }
-
+/*image center class*/
 .centerImg {
   display: block; 
   margin: 0 auto;
 }
 
-/*login ccs*/
+/*LOGIN CSS*/
 
 .form-signin {
   max-width: 330px;

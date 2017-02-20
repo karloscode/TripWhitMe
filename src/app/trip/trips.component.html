@@ -1,5 +1,6 @@
   <worldmap></worldmap>
   <br>
+  <!--make a pipe for control number of char in FROM and TO, perfect aligmment of tripcard-->
   <div class="container">
     <li class="thumbnail tripCard col-md-2 col-xs-6" *ngFor="let trip of trips | async">  
       <img class="img-circle" src="{{trip.photoUrl}}" alt="{{trip.userName}}" style="width:100% ; margin-bottom: 4px">
@@ -31,7 +32,6 @@
         </div>
       </div>
     </li>
-    
   </div>
     
 
