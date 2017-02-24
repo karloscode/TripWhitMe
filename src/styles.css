@@ -16,7 +16,7 @@ h2 {
   opacity:0.9;
 }
 
-/*dark screen in message*/
+/*dark background in message*/
 #grayOutDiv
 {
     background-color: #333;
@@ -28,6 +28,11 @@ h2 {
     width: 100%;
     overflow: hidden;
     z-index: 9999;
+}
+/*selected trip class*/
+.selected {
+    background-color: #CFD8DC !important;
+    color: black;
 }
 
 /*form validation classes*/

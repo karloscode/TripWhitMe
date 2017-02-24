@@ -8,7 +8,7 @@ export class Trip {
  date: string;
  userName: string;
  photoUrl: string;
- tripers: string[];
+ trippers: string[];
  isPlane: boolean;
  isRoad: boolean;
  isLowCost: boolean;
@@ -25,7 +25,7 @@ export class Trip {
  	this.date = date;
  	this.userName = userName;
  	this.photoUrl = photoUrl;
- 	this.tripers = trippers;
+ 	this.trippers = trippers;
  	this.isPlane = isPlane;
  	this.isRoad = isRoad;
  	this.isLowCost = isLowCost;

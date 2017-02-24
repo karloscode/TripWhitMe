@@ -19,4 +19,9 @@ export class TripService{
  	  this.items.push(trip);
  }
 
+ updateTrippers(trip){
+	 let id: string = trip.$key;
+	 this.items.update(id , { trippers: trip.trippers });
+ }
+
 }
