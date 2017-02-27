@@ -1,28 +1,28 @@
   <worldmap></worldmap>
-  <flash-messages></flash-messages>
+  <!--<flash-messages></flash-messages>-->
   <br>
   <!--make a pipe for control number of char in FROM and TO, perfect aligmment of tripcard-->
   <div class="container">
     <li class="thumbnail tripCard col-md-2 col-xs-6" *ngFor="let trip of trips | async" [class.selected]="trip === selectedTrip"
         (click)="onSelect(trip)">  
       <img class="img-circle" src="{{trip.photoUrl}}" alt="{{trip.userName}}" style="width:100% ; margin-bottom: 4px">
-      <h4 class="text-center"style="font-weight:bold"> {{ trip.userName }}</h4>
-      <p class="text-center" style="font-weight:bold">From: {{trip.from.name}} </p>
-      <p class="text-center" style="font-weight:bold">To: {{trip.to.name}} </p>
+      <h4 class="text-center"style="font-weight:bold" data-toggle="tooltip" data-placement="left" title={{trip.userName}} > {{ trip.userName | truncateText : 15  }}</h4>
+      <p class="text-center" style="font-weight:bold" data-toggle="tooltip" data-placement="left" title={{trip.from.name}} >From: {{trip.from.name  | truncateText : 12 }} </p>
+      <p class="text-center" style="font-weight:bold" data-toggle="tooltip" data-placement="left" title={{trip.to.name}}>To: {{trip.to.name | truncateText : 12 }} </p>
       <p class="text-center"> Date: {{trip.date}} </p>
       <a *ngIf="(trip.isPlane)" class='my-tool-tip' data-toggle="tooltip" data-placement="left" title="Trip by Plane">
         <span class='glyphicon glyphicon-plane logo-small'></span>
       </a>
-      <a *ngIf="(trip.isRoad)" class='my-tool-tip' data-toggle="tooltip" data-placement="left" title="Trip by Road">
+      <a *ngIf="(trip.isRoad)" data-toggle="tooltip" data-placement="left" title="Trip by Road">
         <span class='glyphicon glyphicon-road logo-small text-danger'></span>
       </a>
-      <a *ngIf="(trip.isLowCost)" class='my-tool-tip' data-toggle="tooltip" data-placement="left" title="Trip Low Cost">
+      <a *ngIf="(trip.isLowCost)" data-toggle="tooltip" data-placement="left" title="Trip Low Cost">
         <span class='glyphicon glyphicon-euro text-warning'></span>
       </a>
-      <a *ngIf="(trip.isAny)" class='my-tool-tip' data-toggle="tooltip" data-placement="left" title="Any Date , Any Place">
+      <a *ngIf="(trip.isAny)" data-toggle="tooltip" data-placement="left" title="Any Date , Any Place">
         <span class='glyphicon glyphicon-asterisk text-success'></span>
       </a>
-       <a class='my-tool-tip' data-toggle="tooltip" data-placement="left" title="Users Go With">
+       <a data-toggle="tooltip" data-placement="left" title="Users Go to this Trip">
       <p class="badge badgeUsersGo">{{trip.trippers.length}}</p>
       </a>
       <div class="row">

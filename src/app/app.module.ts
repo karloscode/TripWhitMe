@@ -17,9 +17,10 @@ import { firebaseConfig } from './firebaseProject';
 import { CollapseDirective } from 'ng2-bootstrap';
 import { DropdownModule } from 'ng2-bootstrap';
 import { AmChartsDirective } from "amcharts3-angular2/amcharts.directive";
-import {GoogleplaceDirective} from './directives/googleplace.directive';
+import { GoogleplaceDirective } from './directives/googleplace.directive';
 import { WorldMapComponent} from './maps/worldmap.component';
 import { FlashMessagesModule } from 'angular2-flash-messages';
+import { TruncateText } from './pipes/truncateText.pipe';
 
 
 
@@ -38,7 +39,7 @@ export const firebaseAuthConfig = {
   ],
   declarations: [ AppComponent ,TripsComponent, TripDetailComponent , 
   TripsFormComponent , PageNotFoundComponent , CollapseDirective , AddTripComponent , AmChartsDirective , 
-  WorldMapComponent , GoogleplaceDirective
+  WorldMapComponent , GoogleplaceDirective , TruncateText
   ],
   providers: [ TripService ],
   bootstrap: [ AppComponent ]
