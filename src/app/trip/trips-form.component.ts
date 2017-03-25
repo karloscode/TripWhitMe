@@ -10,7 +10,7 @@ export class TripsFormComponent {
 	placeTo = new Place( 0 , 0 ,"");
 	@Output() modelEmitter = new EventEmitter();
 	model = new Trip("none" , this.placeFrom , this.placeTo , "default_map.png" , "0" , "name" , 
-		"/assets/iconavatar1.png", [] , false , false , false , false );
+		"/assets/iconavatar1.png", [""] , false , false , false , false );
 
 
 
@@ -126,9 +126,7 @@ export class TripsFormComponent {
 				"adjustAnimationSpeed": true,
 				}
 				]
-		};
-  
-
+			};
          }
 
 	getAddressTo(place:Object) {       
@@ -181,7 +179,6 @@ export class TripsFormComponent {
 				"adjustAnimationSpeed": true,
 				}
 				]
-		};
-        // console.log("lat:"+this.placeTo.lat, "lng:"+this.placeTo.lng, "adress:"+this.placeTo.name);
-         }
+			};
+		}
 }

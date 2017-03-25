@@ -3,10 +3,8 @@ import { TripService } from './trip.service';
 import { AngularFire, FirebaseApp } from 'angularfire2';
 import { TripsFormComponent } from './trips-form.component';
 import { Router } from '@angular/router';
-import {GoogleplaceDirective} from '../directives/googleplace.directive';
-
-
-
+import { GoogleplaceDirective } from '../directives/googleplace.directive';
+import { Trip } from './trip'
 
 @Component({
   selector: 'addtrip',
@@ -26,11 +24,11 @@ export class AddTripComponent implements OnInit {
         });
   }
 
-  new_Trip(newTrip){
+  newTrip(newTrip: Trip){
     newTrip.uid = this.userData.auth.uid;
     newTrip.userName = this.userData.auth.displayName;
     newTrip.photoUrl = this.userData.auth.photoURL;
-    newTrip.trippers = 1;
+    newTrip.trippers = [];
     this.tripService.newTrip(newTrip);
     this.router.navigate(['/']);
   }

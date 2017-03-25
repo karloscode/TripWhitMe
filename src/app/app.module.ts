@@ -21,6 +21,9 @@ import { GoogleplaceDirective } from './directives/googleplace.directive';
 import { WorldMapComponent} from './maps/worldmap.component';
 import { FlashMessagesModule } from 'angular2-flash-messages';
 import { TruncateText } from './pipes/truncateText.pipe';
+import { ChatComponent } from './chat/chat.component';
+import { ChatService} from './chat/chat.service';
+
 
 
 
@@ -39,9 +42,9 @@ export const firebaseAuthConfig = {
   ],
   declarations: [ AppComponent ,TripsComponent, TripDetailComponent , 
   TripsFormComponent , PageNotFoundComponent , CollapseDirective , AddTripComponent , AmChartsDirective , 
-  WorldMapComponent , GoogleplaceDirective , TruncateText
+  WorldMapComponent , GoogleplaceDirective , TruncateText, ChatComponent
   ],
-  providers: [ TripService ],
+  providers: [ TripService , ChatService],
   bootstrap: [ AppComponent ]
 })
 export class AppModule {}

@@ -1,15 +1,11 @@
 
 export class Place {
- lat: number;
- lng: number;
- name: string;
 
-
- constructor (lat: number, lng: number, name: string)
+ constructor (public lat: number, public lng: number, public name: string)
  {
  	this.lat = lat;
 	this.lng = lng;
  	this.name = name;
-
  }
+ 
 }

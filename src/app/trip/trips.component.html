@@ -1,4 +1,5 @@
   <worldmap></worldmap>
+  <app-chat *ngIf="(hiddenChat)" [trip]="selectedTrip"></app-chat>
   <!--<flash-messages></flash-messages>-->
   <br>
   <!--make a pipe for control number of char in FROM and TO, perfect aligmment of tripcard-->
@@ -23,14 +24,15 @@
         <span class='glyphicon glyphicon-asterisk text-success'></span>
       </a>
        <a data-toggle="tooltip" data-placement="left" title="Users Go to this Trip">
-      <p class="badge badgeUsersGo">{{trip.trippers.length}}</p>
+      <p *ngIf="(trip.trippers)" class="badge badgeUsersGo">{{trip.trippers.length}}</p>
+      <p *ngIf="(trip.trippers)==undefined" class="badge badgeUsersGo">0</p>
       </a>
       <div class="row">
         <div class="col-md-6 col-xs-6">
           <button class="btn btn-sm btn-primary centerImg" (click)="addTripper(trip)" >I Go!</button>
         </div>
         <div class="col-md-6 col-xs-6">
-          <button class="btn btn-sm btn-primary centerImg">Chat</button>
+          <button class="btn btn-sm btn-primary centerImg" (click)="chat(trip)">Chat</button>
         </div>
       </div>
     </li>

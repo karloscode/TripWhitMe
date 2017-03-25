@@ -1,23 +1,9 @@
 import { Place } from "./place"
 export class Trip {
- id: string;
- uid: string;
- from: Place;
- to: Place;
- map: string;
- date: string;
- userName: string;
- photoUrl: string;
- trippers: string[];
- isPlane: boolean;
- isRoad: boolean;
- isLowCost: boolean;
- isAny: boolean;
 
- constructor (uid:string, from: Place, to: Place, map: string, 
- 	date: string, userName: string , photoUrl: string , trippers: string[] ,
- 	isPlane: boolean , isRoad: boolean , isLowCost: boolean , isAny: boolean
- ){
+ constructor ( public uid: string , public from: Place , public to: Place , public map: string , 
+ 	public date: string , public userName: string , public photoUrl: string , public trippers: string[] ,
+ 	public isPlane: boolean , public isRoad: boolean , public isLowCost: boolean , public isAny: boolean ) {
  	this.uid = uid;
 	this.from = from;
  	this.to = to;
@@ -30,7 +16,5 @@ export class Trip {
  	this.isRoad = isRoad;
  	this.isLowCost = isLowCost;
  	this.isAny = isAny;
-
-
  }
 }

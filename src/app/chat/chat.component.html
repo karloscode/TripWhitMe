@@ -1,0 +1,13 @@
+<div class="chat-panel" *ngIf="userData">
+  <div class="messages-panel" #messagesPanel [scrollTop]="messagesPanel.scrollHeight" *ngIf="userData">
+    <li [ngClass]="{'self': message.displayName == userData.auth.displayName}"
+                 *ngFor="let message of messages">
+                     <img src="{{userData.auth.photoURL}}" class="img-circle img-thumbnail">
+                     <span>{{userData.auth.displayName}}</span>
+                     {{message.text}}
+    </li>
+  </div>
+  <div class="input-panel" *ngIf="userData">
+    <input placeholder="Escribe tu mensaje" (keyup.enter)="sendMessage(messageInput)" #messageInput>
+  </div>
+</div>

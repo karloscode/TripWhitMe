@@ -29,6 +29,34 @@ h2 {
     overflow: hidden;
     z-index: 9999;
 }
+
+.chat-panel {
+	position: relative;
+	padding-top: 16px;
+	height: calc(100vh - 64px - 60px);
+	width: 800px;
+	background-color: #eee;
+	margin: 30px auto 0 auto;
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,.06),0 2px 5px 0 rgba(0,0,0,.2);
+	
+}
+
+.messages-panel {
+		max-height: calc(100vh - 284px);
+		overflow-y: scroll;
+		padding: 0 32px;
+		border-top: 1px solid #ddd;
+	}
+.input-panel {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		padding: 15px;
+		background-color: white;
+		}
+
+
 /*selected trip class*/
 .selected {
     background-color: #CFD8DC !important;
